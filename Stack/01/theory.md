@@ -1,4 +1,4 @@
-# 📚 Stack - Theory Question (Day X)
+# 📚 Stack - Theory Question (Day 1)
 
 ## ❓ Question
 
