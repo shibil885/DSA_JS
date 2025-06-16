@@ -1,4 +1,4 @@
-# 📘 Array - Theory Question (Day X)
+# 📘 Array - Theory Question (Day 1)
 
 ## ❓ Question
 
