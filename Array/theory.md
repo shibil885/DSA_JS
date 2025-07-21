@@ -7,46 +7,46 @@ Welcome to the array section! Below you'll find a curated list of theory questio
 ## 📘 Theory Questions
 
 <details>
-  <summary>1. What is the difference between an array and a list?</summary>
+<summary>1. What is a Multi-Dimensional Array?</summary>
+Answer:
 
-**Answer:**
+A multi-dimensional array is an array where each element is itself another array.
 
-- **Array** is a collection of elements stored in contiguous memory locations.
-- **List** (like a Linked List) can be dynamic and non-contiguous.
-- Arrays provide fast access (O(1)), while lists provide faster insertion/deletion (O(1) at head).
+It allows data to be stored in tables (2D), cubes (3D), or higher dimensions.
 
+Common use cases include: matrices, grids, image pixels, and game boards.
+
+Example of a 2D array:
+
+```js
+const matrix = [
+[1, 2, 3],
+[4, 5, 6],
+[7, 8, 9]
+];
+console.log(matrix[1][2]); // Output: 6
+```
 </details>
 
 ---
 
-<details>
-  <summary>2. What is the time complexity of basic array operations?</summary>
+<details> <summary>2. What is a Sparse Array?</summary>
+Answer:
 
-**Answer:**
+A sparse array is an array in which most of the elements are empty, undefined, or default values (like 0 or null).
 
-| Operation     | Time Complexity |
-|---------------|-----------------|
-| Access        | O(1)            |
-| Insert/Delete at End | O(1) (amortized) |
-| Insert/Delete at Middle | O(n) |
+It saves memory by not allocating space for all indices.
 
+Common in situations where the data is mostly empty or sparse, like storing pixel data, graph adjacency matrices, or index-based caches.
+
+In JavaScript, a sparse array can be created like this:
+
+```js
+
+const arr = [];
+arr[10] = 'hello';
+console.log(arr);         // [ <10 empty items>, 'hello' ]
+console.log(arr.length);  // 11
+Accessing a missing index returns undefined, but the length still includes it.
+```
 </details>
-
----
-
-## 💻 Coding Questions
-
-<details>
-  <summary>1. Two Sum</summary>
-
-**Problem:**  
-Given an array of integers `nums` and an integer `target`, return indices of the two numbers such that they add up to `target`.
-
-**Approach:**
-
-- Use a HashMap to store value and index.
-- For each element, check if `target - current` exists in the map.
-
-```ts
-function twoSum(nums: number[], target: number): number[] {
-  co
