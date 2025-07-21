@@ -95,8 +95,6 @@ console.log(jagged[1][1]); // Output: 5
 ```
 🔸 Visual Structure:
 ```css
-Copy
-Edit
 Row 0 → [1, 2, 3]
 Row 1 → [4, 5]
 Row 2 → [6, 7, 8, 9]
