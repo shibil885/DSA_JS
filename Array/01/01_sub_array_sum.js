@@ -8,8 +8,6 @@
 
 //Brute Force
 
-
-
 // function maxSubArray(nums) {
 //     let maxSubArray = nums[0];
 
