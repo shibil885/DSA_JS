@@ -18,3 +18,4 @@
 15. Delete a specific value
 16. Sum of element (recursion)
 17. Remove even from an array (recursion)
+18. Remove adjacent Odd

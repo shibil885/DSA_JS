@@ -7,38 +7,39 @@
  * [null, null, null, 1, 1, false]
 */
 
-
 class Queue {
-    stack1 = [];
-    stack2 = [];
-
-    push(val) {
-        while (this.stack1.length) {
-            this.stack2.push(this.stack1.pop())
-        }
-        this.stack1.push(val)
-
-        while (this.stack2.length) {
-            this.stack1.push(this.stack2.pop())
-        }
+    constructor() {
+        this.inStack = [];
+        this.outStack = [];
     }
-    pop() {
-        return this.stack1.pop();
+
+    enqueu(val) {
+        this.inStack.push(val);
+    }
+
+    dequeu() {
+        if (!this.outStack.length) {
+            while (this.inStack.length) {
+                this.outStack.push(this.inStack.pop());
+            }
+        }
+        return this.outStack.pop();
     }
     peek() {
-        return this.stack1[this.stack1.length - 1]
-    }
-    empty() {
-        return this.stack1.length == 0
+        if (!this.outStack.length) {
+            while (this.inStack.length) {
+                this.outStack.push(this.inStack.pop());
+            }
+        }
+        return this.outStack[this.outStack.length -1];
     }
 }
 
-
 let q = new Queue();
-q.push(10)
-q.push(12)
-q.push(13)
-q.push(14)
-q.pop(14)
-
-console.log(q);
+q.enqueu(1)
+q.enqueu(2)
+q.enqueu(3)
+q.enqueu(4)
+q.enqueu(5)
+q.dequeu()
+console.log(q.peek());

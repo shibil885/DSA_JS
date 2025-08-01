@@ -27,7 +27,7 @@
 // console.log('sol ->', maxSubArray([-2, 1, -3, 4, -1, 2, 1, -5, 4]));
 
 
-function maxSubArray(nums) {
+function maxSumSubArray(nums) {
     let sum = 0;
     let maxSum = nums[0];
     for (let i = 0; i < nums.length; i++) {

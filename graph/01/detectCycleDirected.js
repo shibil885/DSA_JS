@@ -39,7 +39,7 @@ class Graph {
         }
 
 
-        recStack.delete(node); // existing path dont have cycle, so remove it 
+        recStack.delete(node); //if we rach here it means existing path dont have cycle, so remove it 
         /**
          *             **  ** this point
          * 1 - 2 - 3 - 6 - 7

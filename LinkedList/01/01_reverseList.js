@@ -17,3 +17,12 @@ function reverseList(head) {
     }
     return prev
 }
+
+// rec
+function _reverseRec(node, prev = null) {
+    if (!node) return prev;
+
+    const next = node.next;
+    node.next = prev
+    return this._reverseRec(next, node)
+}
