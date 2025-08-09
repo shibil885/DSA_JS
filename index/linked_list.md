@@ -5,12 +5,8 @@
 2. Single Linked list creation with all methods.
 3. Doubly Linked list creation with all methods.
 4. Find last 3 elements
-5. Delete Middle
-
-
-
-
-
+5. Delete Middle.
+6. Detect cycle.
 
 
 

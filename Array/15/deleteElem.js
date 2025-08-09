@@ -6,8 +6,6 @@ function deleteElement(array, target) {
             break
         }        
     }
-    console.log('index', index);
-    
     if(index == -1) return array;
 
     for (let i = index; i < array.length - 1; i++) {

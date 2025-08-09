@@ -15,7 +15,8 @@
 12. Average of even
 13. Find the pairs with the given sum
 14. Flat the multidimensional array
-15. Delete a specific value
+15. Delete a specific value;
 16. Sum of element (recursion)
 17. Remove even from an array (recursion)
-18. Remove adjacent Odd
+18. Remove adjacent Odd.
+19. Two sum 

@@ -1,6 +1,4 @@
-function removeAdjacentOdd(array) {
-    console.log('Input:', array);
-    
+function removeAdjacentOdd(array) {    
     let i = 0;
     while (i < array.length) {
         if (array[i] % 2 !== 0) {
