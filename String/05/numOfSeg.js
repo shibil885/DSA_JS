@@ -1,0 +1,3 @@
+function numberOfSegment(str) {
+    
+}
